@@ -22,7 +22,7 @@ function  App() {
       <Grid item sm={3}>
         <Card style={{backgroundColor: "#1437B6", color: "#FFF"}}>
           <CardContent>
-            <Typography variant="h5">ORDERS</Typography>
+            <Typography variant="h5">BOOKINGS</Typography>
             <Typography variant="subtitles"></Typography>
             <Typography variant="subtitles"></Typography>
           </CardContent>
@@ -35,7 +35,7 @@ function  App() {
       <Grid item sm={3}>
         <Card style={{backgroundColor: "#1437B6", color: "#FFF"}}>
           <CardContent>
-            <Typography variant="h5">REVENUE</Typography>
+            <Typography variant="h5">GROSS REVENUE</Typography>
             <Typography variant="subtitles"></Typography>
           </CardContent>
           <CardActions>
@@ -47,7 +47,7 @@ function  App() {
       <Grid item sm={3}>
         <Card style={{backgroundColor: "#1437B6", color: "#FFF"}}>
           <CardContent>
-            <Typography variant="h5">AVERAGE PRICE</Typography>
+            <Typography variant="h5">AVERAGE ORDER VALUE</Typography>
             <Typography variant="subtitles"></Typography>
           </CardContent>
           <CardActions>
@@ -59,7 +59,7 @@ function  App() {
       <Grid item sm={3}>
         <Card style={{backgroundColor: "#1437B6", color: "#FFF"}}>
           <CardContent>
-            <Typography variant="h5">CAR WASH</Typography>
+            <Typography variant="h5">NEW CUSTOMERS</Typography>
             <Typography variant="subtitles"></Typography>
           </CardContent>
           <CardActions>
@@ -67,7 +67,34 @@ function  App() {
           </CardActions>
         </Card>
       </Grid>
-    </Grid>
-  </Container>);
+    
+
+     <Grid item sm={3}>
+        <Card style={{backgroundColor: "#1437B6", color: "#FFF"}}>
+          <CardContent>
+            <Typography variant="h5">REPEATCUSTOMERS</Typography>
+            <Typography variant="subtitles"></Typography>
+          </CardContent>
+          <CardActions>
+            <Button endIcon={<ArrowForwardIcon />} style={{color: "#FFF"}}>Since Last month</Button>
+          </CardActions>
+        </Card>
+      </Grid>
+    
+     <Grid item sm={3}>
+        <Card style={{backgroundColor: "#1437B6", color: "#FFF"}}>
+          <CardContent>
+            <Typography variant="h5">SUBSCRIBERS</Typography>
+            <Typography variant="subtitles"></Typography>
+          </CardContent>
+          <CardActions>
+            <Button endIcon={<ArrowForwardIcon />} style={{color: "#FFF"}}>Since Last month</Button>
+          </CardActions>
+        </Card>
+      </Grid>
+      </Grid>
+   
+  </Container>
+  );
 }
 export default App;
