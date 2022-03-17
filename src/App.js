@@ -1,5 +1,6 @@
 
 import React, { PureComponent } from 'react';
+//import React, { PureComponent } from 'react';
 import {
   LineChart,
   Line,
@@ -41,6 +42,7 @@ export default class Example extends PureComponent {
             <CartesianGrid strokeDasharray="2 3" />
             <XAxis dataKey="month" />
             <YAxis />
+
             <Tooltip />
             <Area type="monotone" dataKey="amount" stroke="#82ca9d" fill="#82ca9d" />
           </AreaChart>
